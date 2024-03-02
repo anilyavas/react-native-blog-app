@@ -19,7 +19,9 @@
     "expo-linking": "~6.2.2",
     "expo-constants": "~15.4.5",
     "react-native-web": "~0.19.6",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "typescript": "^5.3.0",
+    "@types/react": "~18.2.45"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
