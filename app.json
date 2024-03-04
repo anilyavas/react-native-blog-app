@@ -31,7 +31,7 @@
       
     },
     "plugins": [
-      "expo-router"
+      ["expo-router", {"origin": "https://react-native-blog-app.vercel.app/" }]
     ]
   }
 }
