@@ -2,6 +2,7 @@ import { FlatList, StyleSheet, View } from 'react-native';
 import { getAllPosts } from '../repository/postRepository';
 import { useState } from 'react';
 import { Link } from 'expo-router';
+import PostListItem from '../components/PostListItem';
 
 export default function Page() {
   // const posts = getAllPosts();
@@ -13,14 +14,7 @@ export default function Page() {
         <FlatList
           contentContainerStyle={{ gap: 20 }}
           data={posts}
-          renderItem={({ item }) => (
-            <Link
-              href={`/${item.slug}`}
-              style={{ fontSize: 16, fontWeight: '500' }}
-            >
-              {item.title}
-            </Link>
-          )}
+          renderItem={({ item }) => <PostListItem post={item} />}
         />
       </View>
     </View>
