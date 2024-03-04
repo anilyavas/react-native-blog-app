@@ -26,7 +26,7 @@ const PostDetailsPage = () => {
         <title>{post.title}</title>
         <meta name='description' content={post.description} />
         <meta
-          name='og.image'
+          property='og.image'
           content={`${ORIGIN}/thumbnails/${post.thumbnail}`}
         />
       </Head>
@@ -44,7 +44,7 @@ const PostDetailsPage = () => {
       >
         <Text style={{ fontSize: 30, marginBottom: 20 }}>{post.title}</Text>
         <Image
-          source={{ uri: `/thumbnails/${post.thumbnail}` }}
+          source={{ uri: `${ORIGIN}/thumbnails/${post.thumbnail}` }}
           style={{ width: '100%', aspectRatio: 16 / 9 }}
           alt={post.title}
         />
